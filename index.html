@@ -1,159 +1,189 @@
 <!DOCTYPE html> 
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Marchiondelli Fotos</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />	
-	<link href="css/font-awesome.min.css" rel="stylesheet"/>
-	<link rel="shortcut icon" type="image/png" href="img/camera-icon.png"/>
-</head>
-<body>
-	<section class="intro">
-		<nav>
-			<a href="#" id="menu-icon"></a>
-			<ul>
-				<li><a href="#home">Inicio</a></li>
-				<li><a href="#port">Portfolio</a></li>
-				<li><a href="#about">Sobre Mí</a></li>
-				<li><a href="#contact">Contactame</a></li>
-				<li><a href="#blog">Blog</a></li>
-			</ul>
-		</nav>
-		<div class="inner">
-			<div class="content">
-				<h1>Mariano Marchiondelli</h1>
-				<p>fotografía.</p>
-			</div>
-		</div>
-	</section>
-	<div class="clearfix"></div>
-	<a name="port"></a>
-	<h2>mi portfolio</h2>
-	<div class="grid">		
-		<section class="one-third-port">
-			<a href="./Fotos/flor-1.jpg" target="_blank">
-				<img src="./img/flor-1.jpg">
-			</a>
-		</section>
-		<section class="one-third-port">
-			<a href="./Fotos/flor-2.jpg" target="_blank">
-				<img src="./img/flor-2.jpg">
-			</a>
-		</section>
-		<section class="one-third-port">
-			<a href="./Fotos/flor-3.jpg" target="_blank">
-				<img src="./img/flor-3.jpg">
-			</a>
-		</section>		
-		<section class="one-third-port">
-			<a href="./Fotos/flor-4.jpg" target="_blank">
-				<img src="./img/flor-4.jpg">
-			</a>
-		</section>
-		<section class="one-third-port">
-			<a href="./Fotos/juli-1.jpg" target="_blank">
-				<img src="./img/juli-1.jpg">
-			</a>
-		</section>
-		<section class="one-third-port">
-			<a href="./Fotos/colo-1.jpg" target="_blank">
-				<img src="./img/colo-1.jpg">
-			</a>
-		</section>
-		<section class="one-third-port">
-			<a href="./Fotos/colo-2.jpg" target="_blank">
-				<img src="./img/colo-2.jpg">
-			</a>
-		</section>
-		<section class="one-third-port">
-			<a href="./Fotos/colo-3.jpg" target="_blank">
-				<img src="./img/colo-3.jpg">
-			</a>
-		</section>
-		<section class="one-third-port">
-			<a href="./Fotos/colo-4.jpg" target="_blank">
-				<img src="./img/colo-4.jpg">
-			</a>
-		</section>
-		<section class="one-third-port">
-			<a href="./Fotos/colo-5.jpg" target="_blank">
-				<img src="./img/colo-5.jpg">
-			</a>
-		</section>
-		<section class="one-third-port">
-			<a href="./Fotos/Yacky-1.jpg" target="_blank">
-				<img src="./img/Yacky-1.jpg">
-			</a>
-		</section>
-		<section class="one-third-port">
-			<a href="./Fotos/lali-1.jpg" target="_blank">
-				<img src="./img/lali-1.jpg">
-			</a>
-		</section>
-	</div>
-		<div class="clearfix"></div>
-	<a name="about"></a>
-	<div class="about"> 
-		<section class="left-col">
-			<h2>sobre mí.</h2>
-			<p style="text-indent: 6%">Soy un joven de 21 años al cual le gusta la fotografía y todo lo relacionado a ella. Siempre trato de ser creativo y ofrecer algo diferente, en mi galería podes ver mis trabajos. No dudes en consultar tu sesión de fotos, cumpleaños o casamiento.</p>
-		</section>
-		<section class="sidebar">
-			<img src=".\img\photography-2.png">
-		</section>
-	</div>
-
-		<!-- Begin Mailchimp Signup Form -->
-		
-	<div class="formulario" id="mc_embed_signup">
-		<form action="https://github.us18.list-manage.com/subscribe/post?u=84b46b2d395d38ef30db577af&amp;id=04b59bb161" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		    <div id="mc_embed_signup_scroll">
-			
-				<div class="mc-field-group flex">
-					<label for="mce-EMAIL"></label>
-					<input type="email" value="" placeholder="Suscríbete para recibir las novedades" name="EMAIL" class="required email" id="mce-EMAIL">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Marchiondelli Fotos</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link rel="stylesheet" type="text/css" href="./css/nav.css" />		
+		<link rel="stylesheet" type="text/css" href="./css/footer.css" />		
+		<link href="css/font-awesome.min.css" rel="stylesheet"/>
+		<link rel="shortcut icon" type="image/png" href="img/camera-icon.png"/>
+		</head>
+	<body>
+		<section class="intro">
+			<nav>
+				<a href="#" id="menu-icon"></a>
+				<ul>
+					<li><a href="#home">Inicio</a></li>
+					<li><a href="#port">Portfolio</a></li>
+					<li><a href="#about">Sobre Mí</a></li>
+					<li><a href="#contact">Contactame</a></li>
+					<li><a id="reservations" style="cursor: pointer;" onclick="openReserv()">Reservas Online</a></li>
+				</ul>
+			</nav>
+			<div class="inner">
+				<div class="content">
+					<h1>Mariano Marchiondelli</h1>
+					<p>fotografía.</p>
 				</div>
-				<div id="mce-responses" class="clear">
-					<div class="response" id="mce-error-response" style="display:none"></div>
-					<div class="response" id="mce-success-response" style="display:none"></div>
-				</div>   
-				 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-			    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-			    	<input type="text" name="b_84b46b2d395d38ef30db577af_04b59bb161" tabindex="-1" value="">
-			    </div>
-		    	<div class="clear flex">
-		    		<input type="submit" value="Suscribir" name="subscribe" id="mc-embedded-subscribe" class="button">
-		    	</div>
-	    	</div>
-		</form>
-	</div>
-
-<!--End mc_embed_signup-->
-
-	<div class="clearfix"></div>
-	<a name="contact"></a>
-		<section class="parallax">
-			<div class="parallax-inner"></div>
+			</div>
 		</section>
-	<div class="clearfix"></div>
-	<h2>contactame.</h2>
-	<section class="contact">
-		<p><a href="mailto:mariano.marchiondelli@fotografia.com">mariano.marchiondelli@fotos.com</a></p>
-			<p>0353-153-473918</p>		
-	</section>
-	<div class="clearfix"></div>
-	<footer>
-		<ul class="social">
-			<li><a href="https://www.facebook.com/MarianoMarchiondelliFotografia/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="https://www.instagram.com/mariano.marchiondelli_ph/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-			<li><a href=""><i class="fa fa-youtube"></i></a></li>
-			<li><a href="https://web.whatsapp.com/send?phone=5493533473918&text=Hola%2C%20quisiera%20consultarte%20por%20el%20servicio%20de%20fotografía"><i class="fa fa-whatsapp"></i></a></li>
-		</ul>		
-	</footer>
-	<footer class="second">
-		<p>&copy;2018 - Mariano Marchiondelli Fotografía.</p>
-	</footer>
-</body>
+			<div id="online-reservation" class="hidden">
+				<div class="my-services  flex">
+					<div class="service">
+						<img id="casamientos-img" class="service-img" src="./img/casamientos.jpg">
+						<h3 class="service-name">Casamientos</h3>
+						<p class="center">1h | Primer reunión</p>
+						<button class="lets-talk">Haz tu Reserva</button>
+					</div>
+					<div class="service">
+						<img id="parejas-img" class="service-img" src="./img/parejas.jpg">
+						<h3 class="service-name">Parejas</h3>
+						<p class="center">1h | Primer reunión</p>
+						<button class="lets-talk">Haz tu Reserva</button>
+					</div>
+					<div class="service">
+						<img id="international-img" class="service-img" src="./img/bodas.jpg">
+						<h3 class="service-name">Internacionales</h3>
+						<p class="center">1h | Primer reunión</p>
+						<button class="lets-talk">Haz tu Reserva</button>
+					</div>
+					<div  id="closeReserv"  onclick="closeReserv()" class="close-reserv hidden">
+						<i class="fa fa-close"></i>
+					</div>				
+				</div>			
+			</div>		
+		<div class="clearfix"></div>
+		<a name="port"></a>
+		<h2>mi portfolio</h2>
+		<div class="grid">		
+			<section class="one-third-port">
+				<a href="./Fotos/flor-1.jpg" target="_blank">
+					<img src="./img/flor-1.jpg">
+				</a>
+			</section>
+			<section class="one-third-port">
+				<a href="./Fotos/Yacky-1.jpg" target="_blank">
+					<img src="./img/Yacky-1.jpg">
+				</a>
+			</section>
+			<section class="one-third-port">
+				<a href="./Fotos/flor-3.jpg" target="_blank">
+					<img src="./img/flor-3.jpg">
+				</a>
+			</section>		
+			<section class="one-third-port">
+				<a href="./Fotos/colo-1.jpg" target="_blank">
+					<img src="./img/colo-1.jpg">
+				</a>
+			</section>
+			<section class="one-third-port">
+				<a href="./Fotos/flor-2.jpg" target="_blank">
+					<img src="./img/flor-2.jpg">
+				</a>
+			</section>
+			<section class="one-third-port">
+				<a href="./Fotos/colo-2.jpg" target="_blank">
+					<img src="./img/colo-2.jpg">
+				</a>
+			</section>
+			<section class="one-third-port">
+				<a href="./Fotos/juli-1.jpg" target="_blank">
+					<img src="./img/juli-1.jpg">
+				</a>
+			</section>
+			<section class="one-third-port">
+				<a href="./Fotos/colo-3.jpg" target="_blank">
+					<img src="./img/colo-3.jpg">
+				</a>
+			</section>
+			<section class="one-third-port">
+				<a href="./Fotos/flor-4.jpg" target="_blank">
+					<img src="./img/flor-4.jpg">
+				</a>
+			</section>
+			<section class="one-third-port">
+				<a href="./Fotos/colo-4.jpg" target="_blank">
+					<img src="./img/colo-4.jpg">
+				</a>
+			</section>
+			<section class="one-third-port">
+				<a href="./Fotos/lali-1.jpg" target="_blank">
+					<img src="./img/lali-1.jpg">
+				</a>
+			</section>
+
+			<section class="one-third-port">
+				<a href="./Fotos/colo-5.jpg" target="_blank">
+					<img src="./img/colo-5.jpg">
+				</a>
+			</section>		
+			</div>
+			<div class="clearfix"></div>
+		<a name="about"></a>
+		<div class="about"> 
+			<section class="left-col">
+				<h2>sobre mí.</h2>
+				<p style="text-indent: 6%">Soy un joven de 21 años al cual le gusta la fotografía y todo lo relacionado a ella. Siempre trato de ser creativo y ofrecer algo diferente, en mi galería podes ver mis trabajos. No dudes en consultar tu sesión de fotos, cumpleaños o casamiento.</p>
+			</section>
+			<section class="sidebar">
+				<img src=".\img\photography-2.png">
+			</section>
+		</div>
+
+			<!-- Begin Mailchimp Signup Form -->
+			
+		<div class="formulario" id="mc_embed_signup">
+			<form action="https://github.us18.list-manage.com/subscribe/post?u=84b46b2d395d38ef30db577af&amp;id=04b59bb161" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			    <div id="mc_embed_signup_scroll">
+				
+					<div class="mc-field-group flex">
+						<label for="mce-EMAIL"></label>
+						<input type="email" value="" placeholder="Suscríbete para recibir las novedades" name="EMAIL" class="required email" id="mce-EMAIL">
+					</div>
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>   
+					 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+				    	<input type="text" name="b_84b46b2d395d38ef30db577af_04b59bb161" tabindex="-1" value="">
+				    </div>
+			    	<div class="clear flex">
+			    		<input type="submit" value="Suscribir" name="subscribe" id="mc-embedded-subscribe" class="button">
+			    	</div>
+		    	</div>
+			</form>
+		</div>
+
+	<!--End mc_embed_signup-->
+
+		<div class="clearfix"></div>
+		<a name="contact"></a>
+			<section class="parallax">
+				<div class="parallax-inner"></div>
+			</section>
+		<div class="clearfix"></div>
+		<h2>contactame.</h2>
+		<section class="contact">
+			<p><a href="mailto:mariano.marchiondelli@fotografia.com">mmariano1297@gmail.com</a></p>
+				<p>0353-153-473918</p>		
+		</section>
+		<div class="clearfix"></div>
+		<footer>
+			<ul class="social">
+				<li><a href="https://www.facebook.com/MarianoMarchiondelliFotografia/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/mariano.marchiondelli_ph/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCw8gaTGyte3np53Ex9-0esQ/featured"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="https://web.whatsapp.com/send?phone=5493533473918&text=Hola%2C%20quisiera%20consultarte%20por%20el%20servicio%20de%20fotografía"><i class="fa fa-whatsapp"></i></a></li>
+			</ul>		
+		</footer>
+		<footer class="second">
+			<p>&copy;2018 - Mariano Marchiondelli Fotografía.</p>
+		</footer>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script> 
 </html>

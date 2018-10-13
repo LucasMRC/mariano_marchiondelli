@@ -1,0 +1,47 @@
+/*---Barra de navegación---*/
+
+nav {
+	float: left;
+	padding: 5% 5% 0 0;
+	height: 7rem;
+}
+nav ul {
+	list-style: none;
+	float: left;
+}
+nav ul li {
+	font-family: 'Raleway', serif;
+	font-size: 120%;
+}
+nav ul li a {
+	color: #fff;
+	text-decoration: none;	
+}
+nav ul li a:hover {
+	text-decoration: underline;
+}
+nav ul, nav:active ul {
+	display: none;
+	left: 2.7rem;
+	padding: 8px 0;
+	width: 20%;
+	z-index: 1000;
+}
+nav li {
+	width: 100%;
+	padding: 8px 0 10px 7px;
+	margin: 0;
+}
+nav:hover ul {
+	display: block;
+	position: absolute;
+}
+#menu-icon {
+	width: 30px;
+	height: 26px;
+	background: url(../img/nav-icon.png) center;
+	display: inline-block;
+	margin: 50px 0 0 50px;
+}
+
+/*---fin del navegador---*/

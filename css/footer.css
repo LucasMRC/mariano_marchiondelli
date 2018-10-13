@@ -1,0 +1,29 @@
+.social {
+	list-style: none;
+	text-align: center;	
+}
+.social li {
+	display: inline;
+}
+.social i {
+	font-size: 270%;
+	margin: 1% 5% 7% 4%;
+	color: #2c2c2c;
+}
+.social i:hover {
+	color: #606060;
+}
+footer.second {
+	background-color: #2c2c2c;
+}
+footer.second p {
+	color: #fff;
+	text-align: center;
+	padding: 5%;
+	margin: 0;
+}
+@media screen and (max-width: 480px) { 
+	.contact p {
+		font-size: .8rem;
+	}
+}
