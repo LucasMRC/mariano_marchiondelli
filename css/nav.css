@@ -26,6 +26,9 @@ nav ul, nav:active ul {
 	padding: 8px 0;
 	width: 20%;
 	z-index: 1000;
+	border-radius: .5rem;
+	background-color: rgb(0, 0, 0);/*Fallback Color*/
+	background-color: rgba(0, 0, 0, 0.4);
 }
 nav li {
 	width: 100%;
