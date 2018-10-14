@@ -38,6 +38,8 @@ nav li {
 nav:hover ul {
 	display: block;
 	position: absolute;
+	width: auto;
+    padding: 2.5%;
 }
 #menu-icon {
 	width: 30px;

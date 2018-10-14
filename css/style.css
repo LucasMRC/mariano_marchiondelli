@@ -164,55 +164,6 @@ h1 {
 p.center {
     text-align: center;
 }
-.service {
-    width: 25%;
-    margin: 0 auto;
-    border: .1em solid #2c2c2c;
-    padding: 1em;
-    font-size: 80%;
-    border-radius: 1.5em;
-    text-align: center;
-    align-self: flex-start;
-    background-color: #fff;
-    box-shadow: 0.05rem 0.05rem 0.05rem 0.05rem #2c2c2c;
-}
-.close-reserv {
-	position: absolute;
-    z-index: 2000;
-    top: -7%;
-    left: 100%;    
-}
-.fa-close:before {
-	font-size: 200%;
-    color: #FFFC;
-}
-h3.service-name {
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-family: 'Raleway', serif;
-}
-.my-services {
-	width: 90%;
-	position: absolute;
-	top: 25%;
-	left: 5%;
-	z-index: 1000;
-    padding: 2rem 0;
-    border: .07rem solid #2c2c2c;
-    border-radius: 0.5rem;
-    background-color: #eeeeee;
-    box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem #6c6b6b;
-    background-color: rgb(0, 0, 0);/*Fallback Color*/
-	background-color: rgba(0, 0, 0, 0.4);
-}
-button.lets-talk {
-    border-radius: 0.7rem;
-    padding: 7%;
-    color: #FFF;
-    background-color: #2c2c2c;
-    font-family: "Raleway", serif;
-    cursor: pointer;
-}
 .hidden {
 	display: none;
 }
@@ -232,9 +183,6 @@ button.lets-talk {
 	.grid {
 		column-count: 2;
 	}
-	h3.service-name {
-	font-size: inherit;
-	}	
 	p {
 		font-size: 120%;
 	}
@@ -283,20 +231,5 @@ button.lets-talk {
 	}
 	.one-third-port a img {
 		height: auto;
-	}
-	.my-services {
-		flex-direction: column;
-	}
-	.service {
-		width: auto;
-		margin: .5rem;
-	}
-	.fa-close {
-		align-self: center;
-		font-size: 300%;
-	}
-	.close-reserv {
-		top: -3%;
-    	left: 90%;
-    }
+	}	
 }
